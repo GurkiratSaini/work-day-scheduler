@@ -24,7 +24,20 @@ function textareaState(index, hour) {
     console.log(`${index} index and ${hour} hour`)
 }
 
+function textareaContent(event){
+    console.log(event);
+    
+}
+
 // console.log(moment().format("ha").toUpperCase());
 
 generateTimeBlocks();
 textareaState();
+
+$(".saveBtn").on("click", textareaContent);
+
+/* TO - DO
+    - Add id to row
+    - Set up localStorage
+    - Set up textarea background using momentjs
+*/
