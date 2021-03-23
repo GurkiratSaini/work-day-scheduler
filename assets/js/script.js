@@ -11,7 +11,7 @@ function generateTimeBlocks() {
         var rowEl = $("<div>").addClass("row time-block")
         var timeBlockEl = $("<div>").addClass("col-1 hour");
         var textareaEl = $("<textarea>").addClass("col-10 description");
-        var saveBtnEl = $("<div>").addClass("col-1 saveBtn").html("<i class='fas fa-save'></i>");
+        var saveBtnEl = $("<div>").addClass("col-1 d-flex justify-content-center align-items-center saveBtn").html("<i class='fas fa-save'></i>");
         $(rowEl).append(timeBlockEl, textareaEl, saveBtnEl);
         $(".container").append(rowEl);
     }
