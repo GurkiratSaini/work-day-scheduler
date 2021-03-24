@@ -1,4 +1,3 @@
-
 $("#currentDay").text(moment().format("dddd, MMM Do"));
 
 function generateTimeBlocks() {
